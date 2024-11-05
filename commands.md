@@ -1,34 +1,28 @@
-# My todo App.
-
-# Setup Commands
-
-## Python Virtual Environment
-### Create a venv
+# Create a venv
 ```sh
 python3 -m venv ./.venv
 ```
-### Activate the venv
+# Activate the venv
 ```sh
 source ./.venv/bin/activate
 ```
 
-### Install dependencies
+# Install dependencies
 ```sh
-pip install fastapi requests
+pip install fastapi requests sqlite3
 ```
 
-## SQLite
-### Create the todos table
+# Create the todos table
 ```sql
 CREATE TABLE todos (id INTEGER PRIMARY KEY AUTOINCREMENT, todo TEXT NOT NULL);
 ```
 
-### Insert into todos table
+# Insert into todos table
 ```sql
 INSERT INTO todos (todo) VALUES ("Learn FastAPI");
 ```
 
-### List todos
+# List todos
 ```sql
 SELECT * FROM todos;
 ```
